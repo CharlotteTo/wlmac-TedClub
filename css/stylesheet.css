@@ -1,0 +1,12 @@
+.logo-full {
+    font-size: 10vh;
+}
+.wave{
+    height: 20vh;
+    transform:rotate(180deg); 
+    width: 200vw;
+    transition: 0.3s;
+}
+.svg-clip{
+    overflow: hidden;
+}

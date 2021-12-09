@@ -1,0 +1,6 @@
+:root{
+    /* color variables */
+    --col-accent: rgb(239,  93,  70);
+    --col-shade: rgb(253, 241, 240);
+    --col-background: rgb(255,255,255);
+}

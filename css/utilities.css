@@ -1,0 +1,10 @@
+/* utility classes */
+.bg-accent {
+    background-color: var(--col-accent) !important;
+}
+.bg-shade {
+    background-color: var(--col-shade) !important;
+}
+.text-accent {
+    color: var(--col-accent) !important;
+}
