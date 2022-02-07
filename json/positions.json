@@ -1,0 +1,20 @@
+{
+    "President":{
+        "icon":"fa-institution"
+    },
+    "VP of Communication":{
+        "icon":"fa-microphone"
+    },
+    "School Ambassador":{
+        "icon":"fa-handshake-o"
+    },
+    "Fundraising Coordinator":{
+        "icon":"fa-money"
+    },
+    "Marketing and Advertising": {
+        "icon":"fa-shopping-basket"
+    },
+    "Web Developer":{
+        "icon":"fa-code"
+    }
+}
