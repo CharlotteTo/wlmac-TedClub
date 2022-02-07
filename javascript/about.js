@@ -22,11 +22,9 @@ async function attachExecs() {
             tempCard = tempCard.replaceAll(key, execs[exec][keys[key]]);
         }
         // replace icon
-        console.log(positions[execs[exec]["position"]].icon);
         tempCard = tempCard.replaceAll("__ICON", positions[execs[exec]["position"]].icon);
         // replace id
         tempCard = tempCard.replaceAll("__ID", "BUTTON"+exec);
-        console.log(tempCard);
         // append card to end of cards list
         container.innerHTML+=tempCard;
         // attach event listener to show more button
@@ -36,7 +34,6 @@ async function attachExecs() {
         // });
     }
     const cards = document.querySelectorAll(".exec-card");
-    console.log(cards[cards.length-1]);
     cards[cards.length-1].style["margin-bottom"] = "1.5rem";
 }
 
