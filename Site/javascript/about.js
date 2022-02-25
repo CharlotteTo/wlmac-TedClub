@@ -31,6 +31,8 @@ async function attachExecs() {
         for (const key in keys) {
             tempCard = tempCard.replaceAll(key, execs[exec][keys[key]]);
         }
+        // replace image keys with image on server
+        tempCard = tempCard.replaceAll("__IMAGE", "https://tedclub.herokuapp.com/data/images/"+execs[exec].image);
         // replace icon
         tempCard = tempCard.replaceAll("__ICON", positions[execs[exec]["position"]].icon);
         // replace id
