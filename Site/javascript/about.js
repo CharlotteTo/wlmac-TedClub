@@ -3,7 +3,7 @@ async function attachExecs() {
     // get card container element
     const container = document.querySelector("#card-container");
     // load execs file
-    const execs = await (await fetch("json/execs.json")).json();
+    const execs = await (await fetch("https://tedclub.herokuapp.com/data/execs")).json();
     // load positions file
     const positions = await (await fetch("json/positions.json")).json();
     // load card html
