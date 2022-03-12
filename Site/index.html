@@ -16,6 +16,8 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- Bulma -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.css" />
+    <!-- js -->
+    <script defer src="javascript/main.js"></script>
 </head>
 
 <body>
@@ -49,10 +51,22 @@
 
     <!-- Home Panel start -->
     <div class="is-full bg-shade">
-        <div class="container py-4">
+        <div class="container py-4 is-flex is-align-items-center is-flex-direction-column">
             <div class="has-text-centered subtitle">William Lyon Mackenzie</div>
             <div class="has-text-centered title logo-full py-4" style="font-size: 15vmin"><strong
                     class="text-accent">TED</strong>Club</div>
+            <div style="width: 50%; max-width: 300px;" class="small: is-flex is-justify-content-space-evenly">
+                <figure class="image is-64x64">
+                    <a href="https://classroom.google.com/c/Mzk3MzY4MzI0OTg4?cjc=ubzn555">
+                        <img src="https://visualpharm.com/assets/356/Google%20Classroom-595b40b65ba036ed117d4179.svg" alt="classroom">
+                    </a>
+                </figure>
+                <figure class="image is-64x64">
+                    <a href="https://instagram.com/wlmac.tedclub?utm_medium=copy_link">
+                        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="classroom">
+                    </a>
+                </figure>
+            </div>
         </div>
     </div>
     <!-- Home Panel end -->
@@ -76,11 +90,7 @@
             <div class="column">
                 <h1 class="title mb-1">About</h1>
                 <div style="width: 4vmin; height: 0.25vmin;" class="bg-accent mb-4"></div>
-                <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce venenatis diam et imperdiet
-                    consectetur. Aenean rhoncus tellus leo, non feugiat justo tempor quis. Curabitur urna mauris,
-                    consequat posuere lectus vestibulum, facilisis mattis ante. Integer tincidunt mauris ac quam
-                    consequat feugiat. Sed eget massa congue metus egestas placerat. Fusce sit amet tortor pellentesque
-                    nibh auctor bibendum. Duis et est quam.</div>
+                <div>TED Club at Mackenzie is a club that hosts TED-inspired events to help students improve their public speaking skills and give them a stage to shine. Throughout the year, we plan to host numerous workshops and provide students opportunities to participate in speaking-orientated events and become better public speakers. We have done speech contests, student university panels from prestigious schools such as UOFT, Waterloo, and York, student-hosted TED Talks, and many more!</div>
             </div>
             <div class="column">
                 <img src="https://bulma.io/images/placeholders/640x320.png" class="img-fluid rounded" alt="">
@@ -108,17 +118,23 @@
         <div class="container py-6">
             <div class="columns is-align-items-center">
                 <div class="column">
-                    <h1 class="title mb-1">About</h1>
+                    <h1 class="title mb-1">Events</h1>
                     <div style="width: 4vmin; height: 0.25vmin;" class="bg-accent mb-4"></div>
-                    <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce venenatis diam et imperdiet
-                        consectetur. Aenean rhoncus tellus leo, non feugiat justo tempor quis. Curabitur urna mauris,
-                        consequat posuere lectus vestibulum, facilisis mattis ante. Integer tincidunt mauris ac quam
-                        consequat feugiat. Sed eget massa congue metus egestas placerat. Fusce sit amet tortor
-                        pellentesque
-                        nibh auctor bibendum. Duis et est quam.</div>
-                </div>
-                <div class="column">
-                    <img src="https://bulma.io/images/placeholders/640x320.png" class="img-fluid rounded" alt="">
+                    <div style="width: 100%; min-height: 200px; background-color: #fbf2f0;" class="neumorph tile box">
+                        <div class="box tile is-child is-4">
+                            <div class="columns is-align-items-center">
+                                <div class="column is-2">
+                                    <span class="icon">
+                                        <i class="fa fa-institution is-size-3"></i>
+                                    </span>
+                                </div>
+                                <div class="column">
+                                    <p class="title is-4">Speech Contest</p>
+                                    <p class="subtitle is-6 text-accent">April 8, 4:30pm - 5:30pm</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -147,22 +163,22 @@
                 <div class="column">
                     <div class="form-group py-3">
                         <label for="exampleInputPassword1">Name</label>
-                        <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Name">
+                        <input type="text" class="form-control" id="name" placeholder="Name">
                     </div>
                     <div class="form-group pb-3">
                         <label for="emailInput">Email address</label>
-                        <input type="email" class="form-control" id="emailInput" aria-describedby="emailHelp"
+                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
                             placeholder="Enter email">
                     </div>
                 </div>
                 <div class="column">
                     <div class="form-group tile is-parent is-vertical">
                         <label class="" for="messageInput">Message</label>
-                        <textarea style="width: 100%; height: 12vh" class="p-2" placeholder="Type a message here..." name="messageInput" id="messageInput"></textarea>
+                        <textarea style="width: 100%; height: 12vh" class="p-2" placeholder="Type a message here..." name="messageInput" id="message"></textarea>
                     </div>
                 </div>
             </div>
-            <button type="submit" class="btn bg-accent">Submit</button>
+            <button id="submit" type="button" class="btn bg-accent">Submit</button>
         </form>
     </div>
     <div class="is-full svg-clip">
