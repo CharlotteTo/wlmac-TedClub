@@ -12,8 +12,3 @@
 .svg-clip {
     overflow: hidden;
 }
-
-.neumorph {
-    box-shadow:  8px 8px 16px #d5cecc,
-             -8px -8px 16px #ffffff !important;
-}

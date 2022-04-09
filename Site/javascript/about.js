@@ -1,4 +1,5 @@
 // function to create exec cards
+// stitch-work templating on the client side :D
 async function attachExecs() {
     // get card container element
     const container = document.querySelector("#card-container");
